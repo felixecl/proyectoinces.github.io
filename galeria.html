@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INCES</title>
+  <link rel="stylesheet" type="text/css" href="inces.css">
+  <link href="" rel="">
+
+
+  <style>
+    .parent {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      /* Las columnas se ajustarán automáticamente según el ancho de la pantalla, con un ancho mínimo de 300px y máximo de 1fr */
+      grid-template-rows: auto;
+      /* Las filas se ajustarán automáticamente según el contenido */
+      grid-gap: 10px;
+      /* Espacio entre las celdas del grid */
+      width: 90%;
+      /* Anchura del grid, ajustado al 90% del contenedor */
+      margin: 0 auto;
+      /* Centrar el grid horizontalmente */
+    }
+
+    .img-container {
+      width: 100%;
+      /* Ocupará todo el ancho disponible dentro del grid */
+      max-width: 100%;
+      /* Las imágenes no excedaerán el ancho del grid */
+      height: 350px;
+      /* Altura fija de 350px */
+
+      overflow: hidden;
+      padding: 0;
+      /* Oculta cualquier parte de la imagen que exceda la altura especificada */
+
+    }
+
+    img {
+      border-radius: 1rem;
+      width: 100%;
+      height: 100%;
+      /* La imagen ocupará toda la altura del contenedor img-container */
+      object-fit: cover;
+      padding-bottom: 10px;
+      /* La imagen se ajustará manteniendo su relación de aspecto y recortando si es necesario */
+    }
+
+    .div {
+      background-color: antiquewhite;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .container-gallery-item {
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 100%;
+      background-color: antiquewhite;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </label>
+    <a href="#" class="enlace">
+      <img src="https://th.bing.com/th/id/R.442d8796aa4514e928ce671b06271e59?rik=r1h4srRN91cxfg&pid=ImgRaw&r=0" alt=""
+        class="logo">
+    </a>
+    <ul>
+      <li><a class="active" href="/">INICIO</a></li>
+      <li><a href="·">HISTORIA</a></li>
+      <li><a href="">VENTAJAS</a></li>
+      <li><a href="">MANTENIMIENTO</a></li>
+      <li><a href="/galeria.html">GALERÍA</a></li>
+    </ul>
+  </nav>
+  <br><br>
+
+  <main>
+    <center>
+      <h1>GALERÍA DE FOTOS Y EXPERIENCIAS VIVIDAS</h1>
+    </center>
+
+    <div class="parent">
+      <div class="container-gallery-item">
+        <div class="img-container div">
+          <img src="/public/gallery-3.jpeg" alt="">
+        </div>
+        <center>
+          <p>Primera inspección de los equipos de la institución del INCES.</p>
+        </center>
+      </div>
+      <div class="container-gallery-item">
+        <div class="img-container div">
+          <img src="/public/gallery-5.jpeg" alt="">
+        </div>
+        <center>
+          <p>Primera inspección de los equipos de la institución del INCES.</p>
+        </center>
+      </div>
+      <div class="container-gallery-item">
+        <div class="img-container div">
+          <img src="/public/gallery-7.jpeg" alt="">
+        </div>
+        <center>
+          <p>Primera inspección de los equipos de la institución del INCES.</p>
+        </center>
+      </div>
+      <div class="container-gallery-item">
+        <div class="img-container div">
+          <img src="/public/gallery-1.jpeg" alt="">
+        </div>
+        <center>
+          <p>Desmontaje de los equipos.</p>
+        </center>
+      </div>
+      <div class="container-gallery-item">
+        <div class="img-container div">
+          <img src="/public/gallery-10.jpeg" alt="">
+        </div>
+        <center>
+          <p>Ensamblando los equipos luego de la realización del mantenimiento.</p>
+        </center>
+      </div>
+
+      <!-- container image -->
+      <div class="container-gallery-item">
+        <div class="img-container div">
+          <img src="/public/gallery-2.jpeg" alt="">
+        </div>
+        <center>
+          <p>Limpieza de componentes internos.</p>
+        </center>
+      </div>
+      <!-- fin container image -->
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Derechos de autor 2024 - Servicios </p>
+  </footer>
+</body>
+
+</html>
